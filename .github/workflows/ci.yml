@@ -1,4 +1,4 @@
-name: Lint and Format Checks
+name: Lint and Format Check
 
 on:
     push:
@@ -6,7 +6,7 @@ on:
             - main
 
 jobs:
-    lint_and_fmt:
+    lint_and_fmt_check:
         runs-on: ubuntu-latest
 
         steps:

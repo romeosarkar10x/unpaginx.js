@@ -1,0 +1,24 @@
+name: Lint and Format Checks
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    lint_and_fmt:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v3
+            - uses: actions/setup-node@v3
+                with:
+                    node-version: 23
+
+            - run: npm install
+
+            - name: Check Formatting
+                run: npm run check-fmt
+            
+            - name: Check Lint
+                run: npm run check-lint

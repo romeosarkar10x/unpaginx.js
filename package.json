@@ -1,0 +1,32 @@
+{
+    "name": "unpaginx",
+    "version": "1.0.0",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "start": "node index.mjs",
+        "fmt": "npx prettier --write .",
+        "check-fmt": "npx prettier --check .",
+        "check-lint": "npx eslint",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/romeosarkar10x/unpaginx.js.git"
+    },
+    "keywords": [],
+    "author": "Romeo Sarkar",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/romeosarkar10x/unpaginx.js/issues"
+    },
+    "homepage": "https://github.com/romeosarkar10x/unpaginx.js#readme",
+    "description": "",
+    "devDependencies": {
+        "eslint": "^9.20.0",
+        "eslint-config-prettier": "^10.0.1",
+        "eslint-plugin-prettier": "^5.2.3",
+        "globals": "^15.14.0",
+        "prettier": "^3.4.2"
+    }
+}
